@@ -13,7 +13,7 @@ describe("verify valid login",()=>{
         driver = await getDriver();
         console.log(config);
         await driver.get(config.baseUrl);
-        console.log('login page opened');
+        console.log('login page opened... lets go');
         loginpage = new LoginPage(driver);
 
 
