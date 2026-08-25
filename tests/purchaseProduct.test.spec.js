@@ -42,7 +42,7 @@ describe("Product purchase testing", () => {
             "Sauce Labs Backpack"
         );
 
-        console.log("Product added to cart");
+        console.log("Checking... Yayyy!! Product are added to cart");
         await cartPage.openCart();
 
         const productPresent =
