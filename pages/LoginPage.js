@@ -44,6 +44,15 @@ console.log('entered password');
     console.log('Login completed');
 }
 
+async verifyLoginPage() {
+    console.log('searching for login');
+
+    await this.driver.wait(
+        until.elementLocated(LoginLocators.LoginBtn),
+        config.defaultWait
+    );
+}
+
 }
 
 module.exports = LoginPage
