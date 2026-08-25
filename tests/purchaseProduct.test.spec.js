@@ -93,6 +93,9 @@ describe("Product purchase testing", () => {
         await menuPage.openMenu();
         //click on logout button
         await menuPage.clickLogout()
+        funcitosjdhfjd(){
+            djfiodsjf
+        }
 
        
         await loginPage.verifyLoginPage();
