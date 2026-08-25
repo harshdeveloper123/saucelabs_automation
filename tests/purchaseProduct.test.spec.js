@@ -76,7 +76,7 @@ describe("Product purchase testing", () => {
         await checkoutPage.clickContinue();
 
         console.log("Continue button clicked");
-        
+
         //go to the checkout overview page
         const overviewtitle = await checkoutOverviewPage.getCheckoutOverviewTitle();
         expect(overviewtitle).toBe("Checkout: Overview");
@@ -93,6 +93,11 @@ describe("Product purchase testing", () => {
         await menuPage.openMenu();
         //click on logout button
         await menuPage.clickLogout()
+
+       
+        await loginPage.verifyLoginPage();
+
+        console.log('logout verified successfully');
 
     });
 
