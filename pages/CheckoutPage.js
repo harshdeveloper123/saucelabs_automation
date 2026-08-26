@@ -30,6 +30,7 @@ class CheckoutPage{
             config.defaultWait
         )
         await lastName.sendKeys(lastname)
+        console.log("sent the input for the last name. let's go")
     }
 
     async enterPostalCode(postalcode){
