@@ -37,6 +37,7 @@ class CartPage {
             config.defaultWait
         )
         //click on the checkout button 
+        console.log('wait clicking on the checkout button. Please wait ....')
         await this.driver.findElement(InventoryLocators.checkout).click();
     }
 }
