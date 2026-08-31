@@ -10,7 +10,7 @@ class MenuPage{
 
     async openMenu() {
         const menuButton = await this.driver.wait(
-            console.log("Waiting for menu button to be located..."),
+            console.log("Waiting for menu buttons are  to be located..."),
             until.elementLocated(
                 InventoryLocators.menuButton
             ),
