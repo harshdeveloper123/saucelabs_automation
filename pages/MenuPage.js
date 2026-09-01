@@ -22,6 +22,7 @@ class MenuPage{
     }
 
     async clickLogout(){
+        console.log('Locating the logout button...')
         const logoutBtn = await this.driver.wait(
             until.elementLocated(InventoryLocators.logout),
             config.defaultWait
