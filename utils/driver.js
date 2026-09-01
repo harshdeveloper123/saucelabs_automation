@@ -10,6 +10,7 @@ async function getDriver() {
         options.addArguments('--headless');
         driver = await new Builder()
             .forBrowser(config.browser)
+            .setFirefoxOptions(options)
             .build();
     }
 
