@@ -26,6 +26,10 @@ class MenuPage{
             until.elementLocated(InventoryLocators.logout),
             config.defaultWait
         )
+        await this.driver.wait(
+            until.elementIsVisible(logoutBtn),
+            config.defaultWait
+        )
         await logoutBtn.click()
     }
 }
