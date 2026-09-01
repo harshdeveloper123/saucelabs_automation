@@ -1,10 +1,13 @@
 const {Builder} = require('selenium-webdriver');
+const firefox = require('selenium-webdriver/firefox')
 const config = require('../config/config');
 
 let driver;
 
 async function getDriver() {
     if (!driver) {
+        const options = new firefox.Options();
+        options.addArguments('--headless');
         driver = await new Builder()
             .forBrowser(config.browser)
             .build();
