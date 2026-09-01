@@ -26,4 +26,14 @@ jobs:
         run: npm ci
 
       - name: Run tests
+        env:
+          BROWSER: firefox
+          BASE_URL: https://www.saucedemo.com/
+          IMPLICIT_WAIT: 5000
+          PAGE_LOAD_TIMEOUT: 30000
+          SCRIPT_TIMEOUT: 30000
+          DEFAULT_WAIT: 5000
+          MAX_WAIT: 30000
+          USER_NAME: ${{ secrets.USER_NAME }}
+          PASS_WORD: ${{ secrets.PASS_WORD }}
         run: npm test
