@@ -24,10 +24,19 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - name: Check Firefox
+      - name: Check Firefox and WebDriver
         run: |
+          echo "Firefox:"
           firefox --version
+
+          echo "Firefox location:"
           which firefox
+
+          echo "GeckoDriver:"
+          geckodriver --version || true
+
+          echo "GeckoDriver location:"
+          which geckodriver || true
 
       - name: Run tests
         env:
